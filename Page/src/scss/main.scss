@@ -1,0 +1,18 @@
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+@import "modules/header.scss";
+@import "modules/nav.scss";
+@import "modules/second-nav.scss";
+@import "modules/email.scss";
+@import "modules/email-wrapper.scss";
+@import "modules/conversation.scss";
+@import "modules/message.scss";
+@import "modules/user-info.scss";
+main{
+  display: flex;
+}
+body{
+  background-color: $main-color;
+}

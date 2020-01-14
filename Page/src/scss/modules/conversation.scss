@@ -1,0 +1,21 @@
+.conversation{
+  box-shadow: 0 3px 80px rgba(23, 24, 32, 0.3);
+  .conversation__block{
+    height: 90%;
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 25%;
+  background-color: #2b2d3c;
+  .conversation__button{
+    width: 85%;
+    height: 51px;
+    border-radius: 5px;
+    background-color: $second-color;
+    border: none;
+    color: #fff;
+    font-size: $mainFontSize;
+  }
+}

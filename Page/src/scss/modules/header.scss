@@ -1,0 +1,50 @@
+header{
+  height: 96px;
+  background-color: $main-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 3px 80px rgba(23, 24, 32, 0.2);
+  .header__logo{
+    margin-left: 26px;
+  }
+  .header__block{
+    width: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 29px;
+    .header__addbtn{
+      width: 133px;
+      height: 48px;
+      border-radius: 24px;
+      border: 2px solid $second-color;
+      background-color: $main-color;
+      color: white;
+      font-size: $mainFontSize;
+      label{
+        color: $second-color;
+      }
+    }
+    .header__searchBtn,.header__notfBtn{
+      width: 27px;
+      height: 27px;
+      background-color: $main-color;
+      border:none;
+    }
+    .header__avatar{
+      display: flex;
+      align-items: center;
+      .header__downBtn{
+        width: 12px;
+        height: 8px;
+        background-color: $main-color;
+        border:none;
+      }
+      .header__avatarImg{
+        width: 56px;
+        height: 56px;
+      }
+    }
+  }
+}
