@@ -1,0 +1,49 @@
+.form-wrapp{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .form-reg{
+    background-color: $second-color;
+    border-radius: 10px;
+    width: 40%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .form-reg__header{
+      height: 20%;
+      font-size: 50px;
+      color: #fff;
+    }
+    .form-reg__inputs{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+      height: 60%;
+      justify-content: space-between;
+      .form-reg__input{
+        width: 60%;
+        height: 20%;
+        border: none;
+        border-radius: 10px;
+      }
+      .form-reg__button{
+        width: 40%;
+        height: 15%;
+        border:none;
+        border-radius: 5px;
+        color: $main-color;
+        font-size: 20px;
+      }
+    }
+    .form-reg__a{
+      text-decoration: none;
+      color: $main-color;
+      margin-top: 2%;
+    }
+  }
+}

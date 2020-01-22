@@ -1,0 +1,22 @@
+.nav{
+  display: flex;
+  width: 5%;
+  height: 500px;
+  background-color: $main-color;
+  align-items: center;
+  box-shadow: 0 3px 80px rgba(23, 24, 32, 0.2);
+  .nav__wrapp{
+    height: 440px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    i{
+      filter: invert(54%) sepia(31%) saturate(429%) hue-rotate(192deg) brightness(86%) contrast(81%);
+      &:hover{
+
+      }
+    }
+  }
+}
