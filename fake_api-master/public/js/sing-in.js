@@ -5,7 +5,7 @@ document.querySelector(".form-reg__button").addEventListener("click", function(e
     password: document.querySelector("#password").value,
     name: document.querySelector("#name").value
   }
-  return fetch('http://localhost:3000/api/users', {
+  return fetch('https://geekhub-frontend-js-9.herokuapp.com/api/users/', {
       method: 'POST',
       body: JSON.stringify(user),
       headers: {

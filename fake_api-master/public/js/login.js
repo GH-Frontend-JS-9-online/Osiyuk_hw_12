@@ -1,3 +1,5 @@
+
+let token;
 document.querySelector(".form-reg__button").addEventListener("click", function(e) {
   e.preventDefault();
 
@@ -6,18 +8,19 @@ document.querySelector(".form-reg__button").addEventListener("click", function(e
     password: document.querySelector("#password").value
   }
 
-  return fetch('http://localhost:3000/api/users/login', {
+  return fetch('https://geekhub-frontend-js-9.herokuapp.com/api/users/login', {
       method: 'POST',
       body: JSON.stringify(user),
       headers: {
         'Content-Type': 'application/json',
-        "x-auth-token": "your personal token"
       }})
       .then( async response => {
      if(response.ok){
-      response.json();
-      alert("You logged in!")
-      location.href = "http://localhost:3000/page.html"
+       let user = response.json();
+       return {
+        token: response.headers.get('x-auth-token'),
+        user:  user,
+      }
     }
 
     else{
@@ -32,5 +35,12 @@ document.querySelector(".form-reg__button").addEventListener("click", function(e
       }
     }
   })
+  .then(async data =>{
+    localStorage.setItem('token', data.token)
+    console.log(localStorage.getItem('token'));
+    alert("You logged in!")
+    location.href = "http://localhost:3000/page.html"
+  })
     .catch(error => console.log(error))
 })
+ // export let tokenGlb = token;

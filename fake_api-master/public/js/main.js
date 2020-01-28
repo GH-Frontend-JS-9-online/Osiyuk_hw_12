@@ -1,13 +1,38 @@
-var myHeaders = new Headers();
-myHeaders.append("x-access-token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTE5YzIyM2E0MTk5YzAwMjI3NTI2OGEiLCJpYXQiOjE1Nzk2ODc4OTl9.M5q83O_nP6B8SbfNKOs3CaQTu4JaQcbr_MgDLSgqnTU");
 
-var requestOptions = {
-  method: 'GET',
-  headers: myHeaders,
-  redirect: 'follow'
-};
 
-fetch("http://localhost:3000/api/users/login", requestOptions)
-  .then(response => response.text())
-  .then(result => console.log(result))
-  .catch(error => console.log('error', error));
+  let token = localStorage.getItem('token')
+  let conversationBtn = document.querySelector(".conversation__button");
+  console.log(localStorage.getItem('token'))
+
+
+  conversationBtn.addEventListener("click", async() => {
+   let closeUserList = document.querySelector(".user-block__close");
+   let userBlock = document.querySelector(".users-block");
+   let key;
+
+   var requestOptions = {
+   method: 'GET',
+   headers: {
+       'Content-Type': 'application/json',
+       'x-access-token': token
+     },
+   redirect: 'follow'
+  };
+
+   let response = await fetch("https://geekhub-frontend-js-9.herokuapp.com/api/users/all", requestOptions)
+   let content  = await response.json()
+   let userList = document.querySelector(".user-list__ul");
+   userBlock.style.display = 'flex';
+
+    for(key in content){
+    console.log(content[key].name)
+    userList.innerHTML += `
+							<li>
+								${content[key].name}
+							</li>
+							`;
+    }
+    closeUserList.addEventListener("click",function(){
+      userBlock.style.display = 'none';
+    })
+})

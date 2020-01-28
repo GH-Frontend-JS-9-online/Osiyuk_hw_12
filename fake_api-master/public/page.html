@@ -8,34 +8,46 @@
   <body>
     <header>
       <section class="header__logo">
-        <img src="/img/logo.png" alt="logo">
+        <img src="./img/logo.png" alt="logo">
       </section>
       <section class="header__block">
         <button type="button" name="button" class="header__addbtn">Add <label>+</label> </button>
-        <button type="button" name="button" class="header__searchBtn"><img src="/img/searchIcon.png" alt="searchIcon"></button>
-        <button type="button" name="button" class="header__notfBtn"><img src="/img/notfIcon.png" alt="notfIcon"></button>
+        <button type="button" name="button" class="header__searchBtn"><img src="./img/searchIcon.png" alt="searchIcon"></button>
+        <button type="button" name="button" class="header__notfBtn"><img src="./img/notfIcon.png" alt="notfIcon"></button>
         <div class="header__avatar">
-          <img src="/img/avatar.png" alt="avatar" class="header__avatarImg">
-          <button type="button" name="button" class="header__downBtn"><img src="/img/downIcon.png" alt="downIcon"></button>
+          <img src="./img/avatar.png" alt="avatar" class="header__avatarImg">
+          <button type="button" name="button" class="header__downBtn"><img src="./img/downIcon.png" alt="downIcon"></button>
         </div>
       </section>
     </header>
+    <section class="users-block">
+      <div class="user-block__wrap">
+        <div class="user-block__top">
+          <button type="button" name="button" class="user-block__close">Close</button>
+        </div>
+        <div class="users-list">
+          <ul class="user-list__ul">
+
+          </ul>
+        </div>
+      </div>
+    </section>
     <main class="main">
       <nav class="nav">
         <div class="nav__wrapp">
-          <i><img src="/img/home.png" alt="homeIcon"></i>
-          <i><img src="/img/menu.png" alt="menuIcon"></i>
-          <i><img src="/img/trending-up.png" alt="trending-up Icon"></i>
-          <i><img src="/img/email.png" alt="emailIcon"></i>
-          <i><img src="/img/accounts.png" alt="accountsIcon"></i>
+          <i><img src="./img/home.png" alt="homeIcon"></i>
+          <i><img src="./img/menu.png" alt="menuIcon"></i>
+          <i><img src="./img/trending-up.png" alt="trending-up Icon"></i>
+          <i><img src="./img/email.png" alt="emailIcon"></i>
+          <i><img src="./img/accounts.png" alt="accountsIcon"></i>
         </div>
       </nav>
       <section class="email">
         <nav class="second-nav">
           <div class="second-nav__block">
-            <button type="button" name="button"><img src="/img/inbox.png" alt="inbox icon"><label>Inbox (2)</label></button>
-            <button type="button" name="button"><img src="/img/telegram.png" alt="telegram icon"><label>Sent</label></button>
-            <button type="button" name="button"><img src="/img/delete.png" alt="trash icon"><label>Trash</label></button>
+            <button type="button" name="button"><img src="./img/inbox.png" alt="inbox icon"><label>Inbox (2)</label></button>
+            <button type="button" name="button"><img src="./img/telegram.png" alt="telegram icon"><label>Sent</label></button>
+            <button type="button" name="button"><img src="./img/delete.png" alt="trash icon"><label>Trash</label></button>
           </div>
           <div class="second-nav__filter">
             <label class="second-nav__filterText">Filter messages:</label>
@@ -60,7 +72,7 @@
           </div>
           <div class="user-info">
             <div class="user-info__wrapp">
-              <img src="/img/avatar2.png" alt="avatar">
+              <img src="./img/avatar2.png" alt="avatar">
               <div class="user-info__mainInfo">
                 <h3 class="user-info__name">Name Surname</h3>
                 <span>UX/UI Designer</span>
@@ -81,8 +93,6 @@
         </section>
       </section>
     </main>
-    <script src="/js/main.js">
-
-    </script>
+    <script type="module" src="/js/main.js"></script>
   </body>
 </html>

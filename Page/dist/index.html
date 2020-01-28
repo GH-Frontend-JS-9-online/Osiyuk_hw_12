@@ -2,21 +2,95 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Homework 12</title>
+    <title>Page</title>
   <link href="/assets/css/app.css" rel="stylesheet"></head>
   <body>
-    <section class="form-wrapp">
-      <form class="form-reg" action="index.html" method="post">
-        <h1 class="form-reg__header">Sign up</h1>
-        <div class="form-reg__inputs">
-          <input type="email" name="email" id="Email" class="form-reg__input" placeholder="Email">
-          <input type="text" name="name" id="name" placeholder="Name" class="form-reg__input">
-          <input type="password" name="password" id="password" placeholder="Password" class="form-reg__input">
-          <button class="form-reg__button">Login</button>
+    <header>
+      <section class="header__logo">
+        <img src="./assets/img/logo.png" alt="logo">
+      </section>
+      <section class="header__block">
+        <button type="button" name="button" class="header__addbtn">Add <label>+</label> </button>
+        <button type="button" name="button" class="header__searchBtn"><img src="./assets/img/searchIcon.png" alt="searchIcon"></button>
+        <button type="button" name="button" class="header__notfBtn"><img src="./assets/img/notfIcon.png" alt="notfIcon"></button>
+        <div class="header__avatar">
+          <img src="./assets/img/avatar.png" alt="avatar" class="header__avatarImg">
+          <button type="button" name="button" class="header__downBtn"><img src="./assets/img/downIcon.png" alt="downIcon"></button>
         </div>
-        <a href="#" class="form-reg__a">already have account?</a>
-      </form>
+      </section>
+    </header>
+    <section class="users-block">
+      <div class="user-block__wrap">
+        <div class="user-block__top">
+          <button type="button" name="button" class="user-block__close">Close</button>
+        </div>
+        <div class="users-list">
+          <ul>
+          
+          </ul>
+        </div>
+      </div>
     </section>
-    <script src="/js/sing-in.js"></script>
+    <main class="main">
+      <nav class="nav">
+        <div class="nav__wrapp">
+          <i><img src="./assets/img/home.png" alt="homeIcon"></i>
+          <i><img src="./assets/img/menu.png" alt="menuIcon"></i>
+          <i><img src="./assets/img/trending-up.png" alt="trending-up Icon"></i>
+          <i><img src="./assets/img/email.png" alt="emailIcon"></i>
+          <i><img src="./assets/img/accounts.png" alt="accountsIcon"></i>
+        </div>
+      </nav>
+      <section class="email">
+        <nav class="second-nav">
+          <div class="second-nav__block">
+            <button type="button" name="button"><img src="./assets/img/inbox.png" alt="inbox icon"><label>Inbox (2)</label></button>
+            <button type="button" name="button"><img src="./assets/img/telegram.png" alt="telegram icon"><label>Sent</label></button>
+            <button type="button" name="button"><img src="./assets/img/delete.png" alt="trash icon"><label>Trash</label></button>
+          </div>
+          <div class="second-nav__filter">
+            <label class="second-nav__filterText">Filter messages:</label>
+            <select class="second-nav__filterSelect">
+              <option>Date</option>
+              <option>Option</option>
+           </select>
+          </div>
+        </nav>
+        <section class="email-wrapper">
+          <div class="conversation">
+             <div class="conversation__block">
+
+             </div>
+            <button type="button" name="button" class="conversation__button">+ New conversation</button>
+          </div>
+          <div class="message">
+            <div class="message__block">
+
+            </div>
+            <input type="text" class="message__input" placeholder="Write message">
+          </div>
+          <div class="user-info">
+            <div class="user-info__wrapp">
+              <img src="./assets/img/avatar2.png" alt="avatar">
+              <div class="user-info__mainInfo">
+                <h3 class="user-info__name">Name Surname</h3>
+                <span>UX/UI Designer</span>
+              </div>
+              <p class="user-info__about">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut</p>
+              <div class="user-info__info">
+                <span class="user-info__span">Email</span>
+                <label class="user-info__label user-info__email">email@gmail.com</label>
+                <span class="user-info__span">Phone</span>
+                <label class="user-info__label user-info__phone">+380666666</label>
+                <span class="user-info__span">Addres</span>
+                <label class="user-info__label user-info__addres">Cherkassy</label>
+                <span class="user-info__span">Organization</span>
+                <label class="user-info__label user-info__org">GeekHub</label>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
   <script type="text/javascript" src="/assets/js/app.js"></script></body>
 </html>
