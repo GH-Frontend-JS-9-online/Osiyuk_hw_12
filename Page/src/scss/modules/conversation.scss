@@ -1,15 +1,76 @@
 .conversation{
   box-shadow: 0 3px 80px rgba(23, 24, 32, 0.3);
-  .conversation__block{
-    height: 90%;
-  }
   display: flex;
   flex-direction: column;
-  align-items: center;
   height: 100%;
-  width: 25%;
+  width: 30%;
   background-color: #2b2d3c;
+  ::-webkit-scrollbar { 
+    width: 0px;
+    background: transparent;
+}
+  .conversation-block{
+    height: 90%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    .conversation-thread{
+      height: 15%;
+      border-bottom: 1px solid #9ca1b2;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10%;
+      width: 80%;
+      &:hover{
+        border-bottom: 1px solid $second-color;
+      }
+    }
+    .conversation-block__top{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .conversation-block__info{
+        display: flex;
+        align-items: center;
+        .conversation__name{
+          color: #ffffff;
+          font-family: Montserrat;
+          font-size: 22px;
+          font-weight: 700;
+          letter-spacing: 0.44px;
+          margin-left: 10px;
+        }
+        .conversation__avatar{
+          width: 42px;
+          height: 42px;
+        }
+      }
+      .conversation-block__date{
+        .conversation__date{
+          color: #2196f3;
+          font-family: Montserrat;
+          font-size: 14px;
+          font-weight: 400;
+          letter-spacing: 0.28px;
+        }
+      }
+    }
+    .conversation-block__p{
+      margin-top: 25px;
+      color: #9ca1b2;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0.32px;
+      padding-bottom: 20px;
+    }
+  }
   .conversation__button{
+    align-self: center;
     width: 85%;
     height: 51px;
     border-radius: 5px;

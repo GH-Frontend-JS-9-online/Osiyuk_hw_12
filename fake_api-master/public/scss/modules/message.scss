@@ -2,12 +2,98 @@
   width: 60%;
   height: 100%;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
   .message__block{
-    height: 90%;
+    height: 93%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    .message__wrapper-yours{
+      margin-top: 20px;
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      .message-yours{
+        display: flex;
+        align-items: center;
+        img{
+          margin-left: 23px;
+          margin-right: 23px;
+          width: 56px;
+          height: 56px;
+        }
+        .message-yours__content{
+          margin-left: 21px;
+          p{
+            word-wrap: break-word;
+            max-width: 400px;
+            background-color: $second-color;
+            color: #ffffff;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            letter-spacing: 0.32px;
+            border-radius:10px 10px 0px 10px;
+            padding:10px;
+          }
+          span{
+            color: #9ca1b2;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 28px;
+            letter-spacing: 0.42px;
+          }
+        }
+      }
+    }
+    .message__wrapper-friends{
+      margin-top: 20px;
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+      .message-friends{
+        display: flex;
+        align-items: center;
+        img{
+          margin-left: 23px;
+          width: 56px;
+          height: 56px;
+        }
+        .message-friends__content{
+          margin-left: 21px;
+          p{
+            word-wrap: break-word;
+            max-width: 400px;
+            background-color: #404359;;
+            color: #ffffff;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            letter-spacing: 0.32px;
+            border-radius:10px 10px 10px 0px;
+            padding:10px;
+          }
+          span{
+            color: #9ca1b2;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 28px;
+            letter-spacing: 0.42px;
+          }
+        }
+      }
+    }
   }
   .message__input{
+    align-self:  center;
     width: 95%;
     height: 51px;
     border-radius: 10px;

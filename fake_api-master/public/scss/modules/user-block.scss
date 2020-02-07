@@ -1,0 +1,43 @@
+.users-block{
+  position: fixed;
+  display: none;
+  justify-content: center;
+  width: 100%;
+  z-index: 1;
+  height: 600px;
+  .user-block__wrap{
+     width: 30%;
+     background-color: $second-color;
+     display: flex;
+     flex-direction: column;
+     border-radius: 5px;
+     .user-block__top{
+       display: flex;
+       justify-content: flex-end;
+       .user-block__close{
+         border:none;
+         font-size: 20px;
+         margin:10px;
+       }
+     }
+     .users-list{
+       display: flex;
+       justify-content: center;
+       font-size: 30px;
+        overflow-y: scroll;
+       ul{
+         width: 100%;
+       }
+       li{
+         margin-top: 20px;
+         color: white;
+         width: 99%;
+         text-align: center;
+         cursor: 	default;
+         &:hover {
+          color: black;
+         }
+       }
+     }
+  }
+}
