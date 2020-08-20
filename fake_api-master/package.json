@@ -10,7 +10,7 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "bcrypt": "^3.0.7",
+    "bcrypt": "^5.0.0",
     "config": "^3.2.4",
     "joi": "^14.3.1",
     "json-server": "^0.15.1",
